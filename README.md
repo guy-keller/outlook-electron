@@ -40,4 +40,6 @@ curl -s "https://raw.githubusercontent.com/guy-keller/outlook-electron/main/othe
 
 1.0.0 - Initial version
 1.0.1 - Bug fixies
-1.0.2 - Notification for meetings. (Thanks to [Guy Keller](https://github.com/guy-keller))
+1.0.2 - Notification for meetings. (Thanks to [Guy Keller](https://github.com/guy-keller))  
+1.1.0 - AppImage build and fixes on notification for meetings.  
+1.2.0 - Fixes on notification for meetings as MS changed the DOM element.  
