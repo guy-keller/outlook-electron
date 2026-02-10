@@ -4,17 +4,23 @@ Outlook client made with electron and Outlook Web App
 
 ## Setup
 
-`npm install`
+```bash
+npm install
+```
 
 # Run 
 
-`npm run start`
+```bash
+npm run start
+```
 
 # Package
 
 They will generate `.deb` and `snap` packages
 
-`npm run dist`
+```bash
+npm run dist
+```
 
 # AppImage install / uninstall
 
@@ -30,7 +36,7 @@ curl -s "https://raw.githubusercontent.com/guy-keller/outlook-electron/main/othe
 
 ## Packages
 
-![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)(https://snapcraft.io/outlook-electron)
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)]( https://snapcraft.io/outlook-electron )
 
 ## Support this project
 
@@ -41,4 +47,5 @@ curl -s "https://raw.githubusercontent.com/guy-keller/outlook-electron/main/othe
 1.0.0 - Initial version
 1.0.1 - Bug fixies
 1.0.2 - Notification for meetings. (Thanks to [Guy Keller](https://github.com/guy-keller))
-1.1.0 - Notification improvements and AppImage build (Thanks to [Guy Keller](https://github.com/guy-keller))
+1.1.0 - AppImage build and fixes on notification for meetings  
+1.2.0 - Fixes on notification for meetings as MS changed the DOM element  
