@@ -1,33 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Outlook</title>
 
-    <!-- Tailwind via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-        /* Ensure the exact pixel size is respected */
-        .size-box {
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #f3f4f6; /* gray-100 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .container {
             width: 250px;
             height: 120px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .message {
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 14px; /* text-sm */
+            font-weight: 500; /* font-medium */
+            color: #1f2937; /* gray-800 */
+        }
+
+        button {
+            background-color: #ef4444; /* red-500 */
+            color: white;
+            font-size: 12px; /* text-xs */
+            font-weight: 500;
+            padding: 4px 12px; /* py-1 px-3 */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+        }
+
+        button:hover {
+            background-color: #dc2626; /* red-600 */
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.4); /* subtle focus ring */
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
+<body>
 
-<div class="size-box bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-3">
-    <div role="status" class="text-center mb-3">
-        <p class="text-sm font-medium text-gray-800">
-            You have a calendar reminder showing on Outlook.
-        </p>
+<div class="container">
+    <div role="status" class="message">
+        You have a calendar reminder showing on Outlook.
     </div>
 
-    <button id="closeBtn" class="bg-red-500 hover:bg-red-600 text-white text-xs font-medium py-1 px-3 rounded">
-        Close
-    </button>
+    <button id="closeBtn">Close</button>
 </div>
 
 <script>
